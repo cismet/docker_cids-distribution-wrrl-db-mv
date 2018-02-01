@@ -15,7 +15,7 @@ docker run -t \
   --name ${CONTAINER_BUILD} \
   --entrypoint /entrypoint_build.sh \
   --volume $(pwd)/volume/private:/cidsDistribution/.private \
-  --volume /home/jruiz/Workspace/cidsDistribution/lib/localWRRLDBMV:/cidsDistribution/lib/localWRRLDBMV \
+  --volume $(pwd)/volume/local:/cidsDistribution/lib/localWRRLDBMV \
   ${IMAGE} \
   ${GIT_BRANCH} \
 && {
