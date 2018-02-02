@@ -22,4 +22,3 @@ docker run -t \
   docker commit -a "build.sh" -m "build of branch ${GIT_BRANCH}" ${CONTAINER_BUILD} ${IMAGE}
 }
 docker rm ${CONTAINER_BUILD}
-
