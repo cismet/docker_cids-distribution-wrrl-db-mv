@@ -2,6 +2,11 @@ FROM reg.cismet.de/abstract/cids-distribution:6.3-debian
 
 ARG IMAGE_VERSION=unknown
 
+ENV TZ=Europe/Berlin
+# the following 3 lines are required the prevent server encoding problems
+ENV LANG de_DE.UTF-8  
+ENV LANGUAGE de_DE:de  
+ENV LC_ALL de_DE.UTF-8
 ENV GIT_DISTRIBUTION_PROJECT=cismet/cids-distribution-wrrl-db-mv
 ENV CIDS_CODEBASE https://cids.fis-wasser-mv.de
 ENV CIDS_ACCOUNT_EXTENSION wrrl-db-mv
