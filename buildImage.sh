@@ -1,7 +1,7 @@
 #!/bin/bash
 
 IMAGE_NAME=reg.cismet.de/lung/cids-distribution
-IMAGE_VERSION=6.1-SNAPSHOT
+IMAGE_VERSION=6.2
 
 # ---
 

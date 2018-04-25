@@ -4,9 +4,9 @@ GIT_DISTRIBUTION_RELEASE=$1
 
 #---
 
-IMAGE=reg.cismet.de/lung/cids-distribution:6.1-SNAPSHOT
+IMAGE=reg.cismet.de/lung/cids-distribution:6.2
 CIDS_DISTRIBUTION=cids-distribution-wrrl-db-mv
-EXTENSION=WRRLDBMV
+EXTENSION=wrrl-db-mv
 CONTAINER_BUILD=build_${DISTRIBUTION}_${GIT_DISTRIBUTION_RELEASE}
 
 #----
